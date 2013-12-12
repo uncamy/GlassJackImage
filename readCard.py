@@ -80,7 +80,8 @@ def get_training(training_labels_filename, training_image_filename,\
     return training
 
 def main():
-    filename = 'current_hand.jpg'
+    filename = 'images/test.jpg'
+    #filename = 'current_hand.jpg'
     training_image_filename = 'images/train.png'
     training_labels_filename = 'images/train.tsv'
     num_cards = 3
