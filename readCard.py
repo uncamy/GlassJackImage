@@ -5,15 +5,6 @@ import numpy as np
 import imp
 
 
-
-#numcards = 56
-
-#im =cv2.imread('twoCards.png')
-#im =cv2.imread('glass_example.png')
-#im =cv2.imread('card_example.png')
-#im =cv2.imread('training_cards.png')
-#im =cv2.imread('glass_training_deck.png')
-
 #Image matching
 def rectify(h):
     h = h.reshape((4,2,))
@@ -89,7 +80,7 @@ def get_training(training_labels_filename, training_image_filename,\
     return training
 
 def main():
-    filename = 'images/test.jpg'
+    filename = 'current_hand.jpg'
     training_image_filename = 'images/train.png'
     training_labels_filename = 'images/train.tsv'
     num_cards = 4

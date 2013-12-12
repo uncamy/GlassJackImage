@@ -40,14 +40,13 @@ def process_cards(cards):
 def game_main():
     cards = readCard.main()
     return process_cards(cards)
+    print proccess_cards(cards)
 
 def test():
     #assert process_cards(test_ace) == "Stand"
     #assert process_cards(test_double) == "Split"
     return 'Pick Move worked!'
 
-def it_works():
-    return "WOOT WOOT!"
 
 if __name__ == '__main__':
-    test()
+    game_main()
