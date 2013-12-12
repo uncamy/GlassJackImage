@@ -42,7 +42,7 @@ def game_main():
         cards = readCard.main()
         return process_cards(cards)
     except:
-        return 'error'
+        return "Sorry we can't process this image"
 def test():
     #assert process_cards(test_ace) == "Stand"
     #assert process_cards(test_double) == "Split"
