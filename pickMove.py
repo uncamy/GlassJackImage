@@ -38,10 +38,11 @@ def process_cards(cards):
     return move
 
 def game_main():
-    cards = readCard.main()
-    return process_cards(cards)
-    print proccess_cards(cards)
-
+    try:
+        cards = readCard.main()
+        return process_cards(cards)
+    except:
+        return 'error'
 def test():
     #assert process_cards(test_ace) == "Stand"
     #assert process_cards(test_double) == "Split"
