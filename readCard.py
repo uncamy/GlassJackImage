@@ -83,7 +83,7 @@ def main():
     filename = 'current_hand.jpg'
     training_image_filename = 'images/train.png'
     training_labels_filename = 'images/train.tsv'
-    num_cards = 4
+    num_cards = 3
     num_training_cards = 56
 
     training = get_training(training_labels_filename,\
